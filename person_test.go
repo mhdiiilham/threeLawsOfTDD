@@ -5,10 +5,10 @@ import (
 )
 
 func TestCreateNewPerson(t *testing.T) {
-	Person := newPerson("Muhammad", "ilham", 19)
+	Person := NewPerson("Muhammad", "Ilham", 19)
 
 	if Person.Firstname != "Muhammad" {
-		t.Errorf("Expected firstname of Person is Muhammad, but got:%v ", Person.Firtsname)
+		t.Errorf("Expected firstname of Person is Muhammad, but got:%v ", Person.Firstname)
 	}
 
 	if Person.Lastname != "Ilham" {
